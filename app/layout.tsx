@@ -8,7 +8,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   title: "Desk — Partner Management",
   description: "One shared workspace for projects, channel partners, leads, and commissions.",
-  metadataBase: new URL("https://desk-partner-hub.mollymishra28288.chatgpt.site"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   openGraph: {
     title: "Desk — Partner Management",
     description: "Partners. Projects. Progress.",
